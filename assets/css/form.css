@@ -1,10 +1,23 @@
-html{
+*{
+    box-sizing: border-box;
+}
+:root{
+    width: 1300px;
     height: 800px;
 }
-body{
+form{
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+fieldset{
+    width: 400px;
+    height: 250px;
+}
+legend{
+    font-size: 20px;
+    font-weight: bold;
 }
 datalist {
 	display: flex;
@@ -12,7 +25,22 @@ datalist {
 	width: 200px;
 }
 label{
-    text-align: center;
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+}
+input{
+    width: 200px;
+}
+#gender-word{
+    width: 100px;
+}
+.gender > input{
+    width: 20px;
+    margin-left: -5px;
+}
+.gender > label{
+    width: 50px;
 }
 option {
 	padding: 0;
@@ -21,11 +49,19 @@ input[type='range'] {
 	width: 200px;
 	margin: 0;
 }
-input[type='email']:focus {
-	background-color: blue;
+#quesused{
+    width: 20px;
+    margin-left: -100px;
 }
+
 .price{
     display: flex;
     flex-direction: column;
     width: 200px;
+}
+.btns > input{
+    width: 70px;
+}
+.btns{
+    padding-top: 10px;
 }
