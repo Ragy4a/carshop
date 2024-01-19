@@ -53,11 +53,30 @@ input[type='range'] {
     width: 20px;
     margin-left: -100px;
 }
-
+.autocolor{
+    width: 270px;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+}
+.autocolor > div{
+    width: fit-content;
+}
+.autocolor > div > label{
+    width: fit-content;
+    height: fit-content;
+}
+.autocolor > div > input{
+    width: 10px;
+    margin-right: -5px;
+}
 .price{
     display: flex;
     flex-direction: column;
     width: 200px;
+}
+.price > label{
+    height: fit-content;
 }
 .btns > input{
     width: 70px;
